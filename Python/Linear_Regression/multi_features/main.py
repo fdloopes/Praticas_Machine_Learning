@@ -57,7 +57,7 @@ theta = np.zeros(3)
 [theta, J_history] = gradientDescent(X, y, theta, alpha, num_iters)
 
 # Plot the convergence graph
-plt.plot(range(J_history.size), J_history, '-b', 'LineWidth', 2)
+plt.scatter(range(J_history.size), J_history, c='b', s=10)
 plt.xlabel('Number of iterations')
 plt.ylabel('Cost J')
 plt.show()
