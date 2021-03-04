@@ -18,21 +18,21 @@ addpath("../helpers");
 
 %% ======================= Plotting =======================
 
-fprintf('Plotting Data ...\n')
+fprintf('Plotting Data ...\n');
 data = load('dataset.txt');
 X = data(:, 1); 
 y = data(:, 2);
 m = length(y); % number of training examples
 
 % Plot Data
-plotData(X, y,'Population of City in 10,000s', 'Profit in $10,000s');
+plotData(X, y,'Population of City in 10,000s', '');
 
 fprintf('Program paused. Press enter to continue.\n');
 pause;
 
 %% =================== Part 1: Cost and Gradient descent ===================
 
-X = [ones(m, 1), data(:,1)]; % Add a column of ones to x
+X = [ones(m, 1), data(:,1)]; 
 theta = zeros(2, 1);         % initialize fitting parameters
 
 % Some gradient descent settings
