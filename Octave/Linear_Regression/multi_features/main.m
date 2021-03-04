@@ -39,7 +39,6 @@ pause;
 fprintf('\nNormalizing Features ...\n');
 
 [X mu sigma] = featureNormalize(X);
-
 % Add intercept term to X
 X = [ones(m, 1) X];
 

@@ -27,8 +27,8 @@ with open('dataset.csv',newline='') as f:
 
 
 # Initialization
-X = np.array(data).transpose()[0];   # Decompose the data array, get population
-y = np.array(data).transpose()[1];   # Decompose the data array, get profit
+X = np.array(data).transpose()[0]   # Decompose the data array, get population
+y = np.array(data).transpose()[1]   # Decompose the data array, get profit
 m = y.size                           # Number of training examples
 
 # Convert data to float

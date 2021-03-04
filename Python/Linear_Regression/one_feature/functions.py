@@ -19,6 +19,7 @@ def costFunction(X,y,theta):
     m = y.size    
     J = 0
     
+    # Formula 1/2*m * sum[i=1:m](h_theta(x[i]) - y[i])²
     h = np.dot(theta,X)         # Calculate h_theta(x)
     error = sum((h - y)**2)     # Calculate Square Error
     J = error * (1/(2*m))       # Multiply by the constant and return the cost
