@@ -4,12 +4,7 @@
 %
 % Date: 12/03/2021
 %
-% This program aims to implement a logistic regression in a data set of student 
-% grades, in order to be able to predict whether a student will pass or not.
-%
-% X(1) refers to grade 1
-% X(2) refers to grade 2
-% y refers to approval or not
+
 %
 
 %% Initialization
