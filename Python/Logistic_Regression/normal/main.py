@@ -95,7 +95,6 @@ print('\ntheta: ', theta)
 print('\nExpected theta (approx): [-25.161 0.206 0.201]')
 
 # Plot the boundary line
-
 plotData([X[1],X[2]],y,labels)
 plotBoundary(X,theta)
 plt.legend(loc='lower left')
