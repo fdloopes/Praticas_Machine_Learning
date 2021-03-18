@@ -15,12 +15,15 @@ y refers to approval or not
 """
 
 # imports
+
+import sys
+sys.path.append('../')
 import numpy as np
 import csv
 import matplotlib.pyplot as plt
 import scipy.optimize as op
 from functions import costFunction, gradientDescent, sigmoid, predict
-from helpers.functions import plotData, plotBoundary
+import helpers.functions as hlp
 
 # Load dataset
 with open('dataset.csv',newline='') as f:
@@ -42,8 +45,8 @@ y = y.astype(np.float)
 
 plt.rcParams['figure.figsize'] = (11,7)
 
-labels = ['Admitted','Not admitted','Exam 1 score','Exam 2 scote']
-plotData(X,y,labels)
+labels = ['Admitted','Not admitted','Exam 1 score','Exam 2 score']
+hlp.plotData(X,y,labels)
 plt.legend(loc='upper right')
 plt.show()
 
@@ -79,7 +82,7 @@ print('\nExpected gradients (approx):\n [0.043 2.566 2.647]\n')
 
 # ============= Part 3: Optimizing using optimize.minimize  =============
 
-#  Set options for fminunc
+#  Set options for minimize
 options = {'maxfun':400}
 
 ret = op.minimize(fun=costFunction,x0=initial_theta, args=(X,y),
@@ -95,8 +98,8 @@ print('\ntheta: ', theta)
 print('\nExpected theta (approx): [-25.161 0.206 0.201]')
 
 # Plot the boundary line
-plotData([X[1],X[2]],y,labels)
-plotBoundary(X,theta)
+hlp.plotData([X[1],X[2]],y,labels)
+hlp.plotBoundary(X,theta)
 plt.legend(loc='lower left')
 plt.show()
 
@@ -109,8 +112,8 @@ prob = sigmoid(np.dot([1,45,85], theta))
 
 # Plot data + student score
 
-plotData([X[1],X[2]],y,labels)
-plotBoundary(X, theta)
+hlp.plotData([X[1],X[2]],y,labels)
+hlp.plotBoundary(X, theta)
 plt.scatter(45,85,label="Predict",c='g',marker='s')
 plt.legend(loc='lower left')
 plt.show()

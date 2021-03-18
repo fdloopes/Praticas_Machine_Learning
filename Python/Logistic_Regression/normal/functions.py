@@ -9,8 +9,6 @@ The file contains the implementations of the Logistic regression functions:
 Cost and Gradient Descent.
 
 """
-import sys
-sys.path.append('../')
 
 import numpy as np
 from helpers.functions import sigmoid, predict
