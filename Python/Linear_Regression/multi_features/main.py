@@ -48,7 +48,7 @@ print('Running gradient descent ...\n')
 
 # Choose some alpha value
 alpha = 0.1
-num_iters = 550
+num_iters = 50
 
 # Init Theta and Run Gradient Descent 
 theta = np.zeros(3)
@@ -57,7 +57,8 @@ theta = np.zeros(3)
 [theta, J_history] = gradientDescent(X, y, theta, alpha, num_iters)
 
 # Plot the convergence graph
-plt.scatter(range(J_history.size), J_history, c='b', s=10)
+plt.rcParams['figure.figsize'] = (11,7)
+plt.plot(range(J_history.size), J_history, c='b')
 plt.xlabel('Number of iterations')
 plt.ylabel('Cost J')
 plt.show()

@@ -36,7 +36,8 @@ X = X.astype(np.float)
 y = y.astype(np.float)
 
 # Plot data
-plt.scatter(X,y,s=10,label='Training data',marker='x',c='g')
+plt.rcParams['figure.figsize'] = (11,7)
+plt.scatter(X,y,label='Training data',marker='x',c='g')
 plt.xlabel('Population of City in 10,000s')
 plt.ylabel('Profit in $10,000s')
 
