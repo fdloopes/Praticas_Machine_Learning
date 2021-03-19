@@ -18,7 +18,7 @@
 <h2>Multi Features</h2>
 
 - Implementação de um modelo em um conjunto de preços de imóveis por cidade, de forma a prever quanto ficará o valor de cada imóvel de acordo com tamanho e número de quartos.
-- O dataset é composto por: `X(1) = tamano da casa em metros quadrados`, `X(2) = número de quartos` e `y = preço das casas`.
+- O dataset é composto por: `X(1) = tamanho da casa em metros quadrados`, `X(2) = número de quartos` e `y = preço das casas`.
 - Possui as implementações das funções:`cost`, `gradient descent`, `feature normalize` e `normal equation`.
 - Por o conjunto de dados possuir dados em uma ordem de grandeza bem diferente foi necessário aplicar a normalização.
 - A implementação da `normal equation` foi a titulo de comparação, pois ela obtém o mesmo resultado, sem necessidade de aplicar normalização aos dados e de forma mais eficiente.
