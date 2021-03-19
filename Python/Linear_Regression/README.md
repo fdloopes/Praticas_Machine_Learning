@@ -5,9 +5,9 @@
 
 <h2>One Feature</h2>
 
-- implementação de um modelo em um conjunto de eficiência de food truck por cidade, para poder prever onde será mais lucrativo abrir um novo food truck.
+- Implementação de um modelo em um conjunto de eficiência de food truck por cidade, para poder prever onde será mais lucrativo abrir um novo food truck.
 - O dataset é composto por: `X = população da cidade em 10.000` e `y = lucro obtido na cidade em 10.000`.
-- Functions.py possui as implementações das funções de custo e gradiente descedente.
+- Functions.py possui as implementações das funções: `cost` and `gradient descent`.
 
 <p align="center">
     <img src="https://github.com/fdloopes/Praticas_Machine_Learning/blob/main/Python/Linear_Regression/one_feature/plot.png"/><br/>
@@ -16,3 +16,14 @@
 
 <h2>Multi Features</h2>
 
+- Implementação de um modelo em um conjunto de preços de imóveis por cidade, de forma a prever quanto ficará o valor de cada imóvel de acordo com tamanho e número de quartos.
+- O dataset é composto por: `X(1) = tamanho da casa em metros quadrados`, `X(2) = número de quartos` e `y = preço das casas`.
+- Functions.py possui as implementações das funções:`cost`, `gradient descent`, `feature normalize` e `normal equation`.
+- Por o conjunto de dados possuir dados em uma ordem de grandeza bem diferente foi necessário aplicar a normalização.
+- A implementação da `normal equation` foi a titulo de comparação, pois ela obtém o mesmo resultado, sem necessidade de aplicar normalização aos dados e de forma mais eficiente.
+> Obs: O uso da normal equation é válido apenas para conjuntos de dados que possuam poucas features, pois conforme o número aumenta a eficiência começa a cair, com n >= 1000 começa a perde eficiência. 
+
+<p align="center">
+    <img src="https://github.com/fdloopes/Praticas_Machine_Learning/blob/main/Python/Linear_Regression/multi_features/plot.png"/><br/>
+    <em>Resultado descida de gradiente após 50 iterações</em>
+</p>
