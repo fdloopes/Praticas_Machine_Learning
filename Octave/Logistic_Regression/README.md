@@ -25,5 +25,5 @@
 
 <p align="center">
     <img src="https://github.com/fdloopes/Praticas_Machine_Learning/blob/main/Octave/Logistic_Regression/regularized/result.png"/><br/>
-    <em>Resultado descida de gradiente após 50 iterações</em>
+    <em>Resultado após 50 iterações</em>
 </p>
