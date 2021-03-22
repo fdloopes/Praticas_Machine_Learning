@@ -1,7 +1,7 @@
 <h1>Logistic Regression</h1>
 
 - Possui, atualmente, duas implementações em octave de regressão logística e um diretório `helpers` com funções auxiliares
-- Implementações para features normais e que necessitam de regularização, além de aumentar o grau da função.
+- Implementação para distribuição normal de dados e que necessitam aumentar o grau da função.
 > Implementações realizadas durante o curso de Aprendizado de Máquina, oferecido pela Stanford University e disponível na plataforma Coursera.
 
 <h2>Normal</h2>
