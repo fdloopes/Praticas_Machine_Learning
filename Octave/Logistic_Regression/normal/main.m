@@ -4,7 +4,12 @@
 %
 % Date: 12/03/2021
 %
-
+% This program aims to implement logistic regression on a student exam data set, 
+% in order to be able to predict whether a student will pass or not.
+%
+% X(1) refers to exam 1
+% X(2) refers to exam 2
+% y refers to approval or not
 %
 
 %% Initialization
